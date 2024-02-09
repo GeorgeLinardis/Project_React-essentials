@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
+import { CORE_CONCEPTS, EXAMPLES } from './data';
 import CoreConcept from "./components/CoreConcept/CoreConcept.jsx";
 import Header from "./components/Header/Header.jsx";
-import { CORE_CONCEPTS, EXAMPLES } from './data';
-import TabButton from "./components/TabButton/TabButton";
+import TabButton from "./components/TabButton/TabButton.jsx";
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null);

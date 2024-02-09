@@ -1,3 +1,4 @@
+
 import "./CoreConcept.css";
 
 function CoreConcept ({ title, alt, description, image }) {
