@@ -7,8 +7,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
