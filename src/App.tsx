@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import CoreConcept from "./components/CoreConcept/CoreConcept.jsx";
-import Header from "./components/Header/Header.jsx";
 import { CORE_CONCEPTS, EXAMPLES } from './data';
+import CoreConcept from "./components/CoreConcept/CoreConcept.tsx";
+import Header from "./components/Header/Header";
 import TabButton from "./components/TabButton/TabButton";
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState(null);
-  function handleClick(topic) {
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  function handleClick(topic: string) {
     setSelectedTopic(topic);
   }
 
@@ -18,7 +18,7 @@ function App() {
         <section id="core-concepts">
           <h2>Core concepts</h2>
           <ul>
-            { CORE_CONCEPTS.map((concept, index) => (
+            { CORE_CONCEPTS.map((concept) => (
                 <CoreConcept key={concept.title} {...concept} />
               ))
             }
@@ -27,13 +27,13 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            {Object.keys(EXAMPLES).map((exampleKey) => (
+            {Object.keys(EXAMPLES).map((exampleKey: string) => (
               <TabButton
                 key={exampleKey}
                 isSelected={exampleKey === selectedTopic}
                 onClick={() => handleClick(exampleKey)}
               >
-                {EXAMPLES[exampleKey].title}
+                {EXAMPLES[exampleKey as keyof typeof EXAMPLES].title}
               </TabButton>
             ))}
           </menu>
@@ -41,9 +41,9 @@ function App() {
             ? <p>Please select a topic</p>
             : (
               <div id="tab-content">
-                <h3>{EXAMPLES[selectedTopic].title}</h3>
-                <p>{EXAMPLES[selectedTopic].description}</p>
-                <pre>{EXAMPLES[selectedTopic].code}</pre>
+                <h3>{EXAMPLES[selectedTopic as keyof typeof EXAMPLES].title}</h3>
+                <p>{EXAMPLES[selectedTopic as keyof typeof EXAMPLES].description}</p>
+                <pre>{EXAMPLES[selectedTopic as keyof typeof EXAMPLES].code}</pre>
               </div>
             )
           }
