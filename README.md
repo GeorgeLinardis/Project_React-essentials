@@ -9,9 +9,12 @@ This repository contains a project created while working on an Academind course 
 - ESLinting
 - Typescript
 
+Check out the live demo [here](#).
+
 ## Project preview
 
 ![image](./src/assets/project-preview.png)
+
 
 -------------------------------------------------------------
 
