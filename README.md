@@ -9,7 +9,7 @@ This repository contains a project created while working on an Academind course 
 - ESLinting
 - Typescript
 
-Check out the live demo [here](#).
+Check out the live demo [here](https://georgelinardis.github.io/Project_React-essentials/).
 
 ## Project preview
 
