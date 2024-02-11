@@ -4,6 +4,11 @@
 
 This repository contains a project created while working on an Academind course on React.
 
+## Enhancements made to the project
+- GitHub Actions
+- ESLinting
+- Typescript
+
 ## Project preview
 
 ![image](./src/assets/project-preview.png)
@@ -11,4 +16,4 @@ This repository contains a project created while working on an Academind course 
 -------------------------------------------------------------
 
 ![image](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![image](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=for-the-badge)
