@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 import { CORE_CONCEPTS, EXAMPLES } from './data';
-import CoreConcept from "./components/CoreConcept/CoreConcept.tsx";
-import Header from "./components/Header/Header";
-import TabButton from "./components/TabButton/TabButton";
+import CoreConcept from './components/CoreConcept/CoreConcept';
+import Header from './components/Header/Header';
+import TabButton from './components/TabButton/TabButton';
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
@@ -19,9 +19,8 @@ function App() {
           <h2>Core concepts</h2>
           <ul>
             { CORE_CONCEPTS.map((concept) => (
-                <CoreConcept key={concept.title} {...concept} />
-              ))
-            }
+              <CoreConcept key={concept.title} {...concept} />
+            ))}
           </ul>
         </section>
         <section id="examples">
@@ -45,8 +44,7 @@ function App() {
                 <p>{EXAMPLES[selectedTopic as keyof typeof EXAMPLES].description}</p>
                 <pre>{EXAMPLES[selectedTopic as keyof typeof EXAMPLES].code}</pre>
               </div>
-            )
-          }
+            )}
         </section>
       </main>
     </div>
