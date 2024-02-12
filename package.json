@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "typescript": "^5.3.3"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
@@ -26,7 +25,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.3",
     "vite": "^5.1.0"
   },
   "keywords": [],
